@@ -10,30 +10,17 @@
 # Обратите внимание, что на вход программе приходят вещественные числа.
 
 a = float(input())
-
 b = float(input())
+c = input()
+z_div = 'Деление на 0!'
 
-ops = input("Введите операцию ")
-
-if b == 0 and ops == "/":
-	print("Деление на 0!")
-	b = float(input("Попробуй еще раз "))
-	if b == 0:
-		print("Вы не справились!")
-
-
-
-if ops == "+":
-	print(a + b)
-elif ops == "-":
-	print(a - b)
-elif ops == "/":
-	print(a / b)
-elif ops == "*":
-	print(a * b)
-elif ops == "mod":
-	print(a % b)
-elif ops == "pow":
-	print(a ** b)
-elif ops == "div":
-	print(a // b)
+OPERATORS = {
+    "+": a + b,
+    "-": a - b,
+    "*": a * b,
+    "/": a / b if b else z_div,
+    "mod": a % b if b else z_div,
+    "div": a // b if b else z_div,
+    "pow": a ** b 
+}
+print(OPERATORS[c])
