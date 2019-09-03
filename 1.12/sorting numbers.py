@@ -2,11 +2,5 @@
 
 # На ввод могут подаваться и повторяющиеся числа.
 
-a = int(input())
-
-b = int(input())
-
-c = int(input())
-
-if a < b < c:
-	print(c,"\n", b,"\n",a)
+lst = sorted([int(input()) for x in range(3)])
+print(lst[2], lst[0], lst[1], sep='\n')
