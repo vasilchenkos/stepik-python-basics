@@ -6,29 +6,19 @@
 
 # В комнате может быть очень много программистов. Проверьте, что ваша программа правильно обработает все случаи, как минимум до 1000 человек.
 
-count = int(input())
+counter = int (input())
+n1 =" программистов"
+n2 =" программист"
+n3 =" программиста"
 
-if count % 10 == 0:
-	print(str(count) + " программистов")
-elif 11<= count <= 20:
-	print(str(count) + " программистов")
-elif count % 100 == 0:
-	print(str(count) + " программистов")
-elif count % 10 == 5:
-	print(str(count) + " программистов")
-elif count % 10 == 1:
-	print(str(count) + " программист")
-elif count % 10 == 6:
-	print(str(count) + " программистов")
-elif count % 10 == 7:
-	print(str(count) + " программистов")
-elif count % 10 == 8:
-	print(str(count) + " программистов")
-elif count % 10 == 9:
-	print(str(count) + " программистов")
-elif count % 10 != 0:
-	print(str(count) + " программиста")
-elif count % 100 != 0:
-	print(str(count) + " программиста")
-else:
-	print(str(count) + " программист")
+if  counter>=0:
+  if counter==0:
+    print(str(counter) + n1)
+  elif counter%100>=10 and counter%100<=20:
+    print(str(counter) + n1)
+  elif counter%10==1:
+    print(str(counter) + n2)
+  elif counter%10>=2 and counter%10<=4:
+    print(str(counter) + n3)
+  else:
+    print(str(counter) + n1)
