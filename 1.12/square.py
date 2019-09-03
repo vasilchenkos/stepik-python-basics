@@ -22,7 +22,7 @@
 
 import math
 
-question = str(input(int))
+question = str(input())
 
 if question == "треугольник":
 	a = int(input())
@@ -34,7 +34,7 @@ if question == "треугольник":
 if question == "круг":
 	r = int(input())
 	pi = 3.14
-	S = pi * r**2
+	S = pi * (r**2)
 	print(S)
 if question == "прямоугольник":
 	a = int(input())
