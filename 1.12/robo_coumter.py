@@ -11,7 +11,7 @@ n1 =" программистов"
 n2 =" программист"
 n3 =" программиста"
 
-if  counter>=0:
+if counter>=0:
   if counter==0:
     print(str(counter) + n1)
   elif counter%100>=10 and counter%100<=20:
