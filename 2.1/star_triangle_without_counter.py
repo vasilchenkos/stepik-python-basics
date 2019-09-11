@@ -1,6 +1,5 @@
-n = input(int())
-stars = '*'
-
-while int(len(stars)) <= n:
-	print(stars)
-	stars += '*'
+number = int(input())
+star = '*'
+while len(star) < number:
+    print(star)
+    star +="*"
