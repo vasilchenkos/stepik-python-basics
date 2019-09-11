@@ -2,5 +2,8 @@
 a = 5
 
 while a >= 5:
-	if a % 2 != 0
-	
+	if a <= 55:
+		print(a, end=' ')
+		a+=2
+	else:
+		break
