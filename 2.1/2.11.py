@@ -9,9 +9,7 @@
 
 a = int(input())
 b = int(input())
-d = 1 - 1
-
-while a%d!=0 or b%d!=0:
-    d+=1
-    if a%d == 0 and b%d == 0:
-        print(d)
+res = a
+while res % b != 0:
+    res += a
+print(res)
